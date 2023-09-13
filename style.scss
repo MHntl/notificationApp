@@ -1,0 +1,59 @@
+@import "external.scss";
+
+.buttons {
+    margin: 50px;
+
+    & button {
+        background: #333;
+        color: #fff;
+        border: none;
+        outline: none;
+        width: 120px;
+        height: 40px;
+        margin: 5px;
+        cursor: pointer;
+    }
+}
+
+#toastBox {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.toast {
+    position: relative;
+    width: 400px;
+    height: 80px;
+    background-color: #fff;
+    font-weight: 500;
+    margin: 15px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+
+    & i {
+        margin: 0 20px;
+        font-size: 35px;
+    }
+}
+
+.progressBar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    animation: anima 3s linear forwards;
+}
+
+@keyframes anima {
+    100% {
+        width: 0;
+    }
+}
